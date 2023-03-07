@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     ArrayAdapter<String> messages = new ArrayAdapter<String>(MainActivity.this, R.layout.activity_list, R.id.messageTextView, msgs);
                     binding.listView.setAdapter(messages);
                     binding.nameEditText.setText("");
+                    Toast.makeText(getApplicationContext(),"ChatBot Service Stopped",Toast.LENGTH_SHORT).show();
                 }
 
             }
